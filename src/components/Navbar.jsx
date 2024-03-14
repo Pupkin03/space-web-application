@@ -28,22 +28,22 @@ const Navbar = () => {
       
               <b className="barlow-condensed-medium md:hidden">00</b> <p>Home</p>
             </NavLink>
-      <NavLink className= {({ isActive}) => isActive ? "border-b-2 border-white" : "flex items-center gap-2" to={"/destination"}>
+      <NavLink className= {({ isActive}) => isActive ? "border-b-2 border-white" : "flex items-center gap-2"} to={"/destination"}>
               <b className="barlow-condensed-medium md:hidden">01</b> <p>Destination</p>
             </NavLink>
-      <NavLink className= "flex items-center gap-2" to={"crew"}>
+      <NavLink className= {({ isActive}) => isActive ? "border-b-2 border-white" : "flex items-center gap-2"} to={"crew"}>
               <b className="barlow-condensed-medium md:hidden">02</b> <p>Crew</p>
             </NavLink>
-      <NavLink className="flex items-center gap-2" to={"Technology"}>
+      <NavLink className= {({ isActive}) => isActive ? "border-b-2 border-white" : "flex items-center gap-2"} to={"Technology"}>
               <b className="barlow-condensed-medium md:hidden">03</b> <p>Technology</p>
             </NavLink>
       </div>
-      <div className="md: hidden">
-        <span className="text-white" onClick={() => setShow((prev) => !prev)}>
+      <div className="md:hidden">
+        <span className="text-whitegit" onClick={() => setShow((prev) => !prev)}>
           {show ? (
-            <IoCloseSharp className="text-4xl right-5 top-9 fixed z-30" />
+            <IoCloseSharp className="text-4xl right-5 top-9 fixed text-white  z-30" />
           ) : (
-            <TfiMenu className="text-3xl" />
+            <TfiMenu className="text-3xl " />
           )}
         </span>
         {show && (
