@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { TfiMenu } from "react-icons/tfi";
 import { IoCloseSharp } from "react-icons/io5";
